@@ -1,7 +1,10 @@
 package com.hemebiotech.analytics;
 
 import java.util.List;
-
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
 /**
  * Anything that will read symptom data from a source
  * The important part is, the return value from the operation, which is a list of strings,
@@ -16,5 +19,7 @@ public interface ISymptomReader {
 	 * 
 	 * @return a raw listing of all Symptoms obtained from a data source, duplicates are possible/probable
 	 */
-	List<String> GetSymptoms ();
-}
+
+
+
+	}

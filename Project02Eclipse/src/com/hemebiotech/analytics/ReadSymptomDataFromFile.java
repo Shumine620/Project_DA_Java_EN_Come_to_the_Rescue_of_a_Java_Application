@@ -12,36 +12,30 @@ import java.util.List;
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
-	private String filepath;
-	
-	/**
-	 * 
-	 * @param filepath a full or partial path to file with symptom strings in it, one per line
-	 */
-	public ReadSymptomDataFromFile (String filepath) {
-		this.filepath = filepath;
-	}
-	
-	@Override
-	public List<String> GetSymptoms() {
-		ArrayList<String> result = new ArrayList<String>();
-		
-		if (filepath != null) {
+		private static final String Symptoms = "C:\\Users\\dance\\Desktop\\symptoms.txt";
+
+	public void main(String[] args) {
+
+		BufferedReader bufferedreader = null;
+		FileReader filereader = null;
+		try {
+			filereader = new FileReader(Symptoms);//Charge le fichier à lire
+			bufferedreader = new BufferedReader(filereader);//Lis le fichier depuis l'input reçu
+			String symptomLine;
+			while ((symptomLine = bufferedreader.readLine()) != null) {
+				System.out.println(symptomLine);//Continue de parcourir et lire le fichier tant qu'il n'est pas vide puis affiche les lignes
+			}
+		} catch (IOException e) {//I/O = Input/Output
+			e.printStackTrace();//Montre où se trouve l'erreur
+		} finally {
 			try {
-				BufferedReader reader = new BufferedReader (new FileReader(filepath));
-				String line = reader.readLine();
-				
-				while (line != null) {
-					result.add(line);
-					line = reader.readLine();
-				}
-				reader.close();
+				if (bufferedreader != null)
+					bufferedreader.close();
+				if (filereader != null)
+					filereader.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
-		
-		return result;
-	}
+	}}
 
-}

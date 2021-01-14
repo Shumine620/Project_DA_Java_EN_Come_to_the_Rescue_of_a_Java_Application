@@ -13,23 +13,25 @@ public class AnalyticsCounter {
 	private static int pupilCount = 0;		// initialize to 0
 	private static String filepath = "Project02Eclipse/symptoms.txt";
 	private static String symptomsMap;
+private static String symptomsList;
 
 	public static void main(String args[]) throws Exception {
-	//Lecture du fichier
+		//Lecture du fichier
 
-	ReadSymptomDataFromFile reader = new ReadSymptomDataFromFile();
-	ArrayList<String> symptoms = reader.getSymptoms(filepath);
-System.out.println(symptoms.get(0));
+		ReadSymptomDataFromFile reader = new ReadSymptomDataFromFile();
+		ArrayList<String> symptoms = reader.getSymptoms(filepath);
+		System.out.println(symptoms.get(0));
 
 
 //Traitement du fichier
 
 SymptomsCount count = new SymptomsCount();
+
+		System.out.println( count);
 		Map <String, Integer> symptomsMap = new HashMap <>( );
-System.out.println( );
-		symptomsMap.forEach((key, value) -> {
-			System.out.println("Symptom : " + key + ", Occurrence : "
-					+ value + " times");
+		System.out.println(symptomsList);
+
+
 			//Ecriture du fichier résultat
 
 			/** first get input
@@ -61,7 +63,7 @@ System.out.println( );
 			 writer.write("rash: " + rashCount + "\n");
 			 writer.write("dialated pupils: " + pupilCount + "\n");
 			 writer.close();*/
-		});
+		};
 
 
-}}
+}

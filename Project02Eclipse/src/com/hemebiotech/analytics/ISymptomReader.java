@@ -13,6 +13,7 @@ import java.util.Map;
  * 
  */
 public interface ISymptomReader {
+
 	ArrayList <String> getSymptoms(String filepath);
 	/**
 	 * If no data is available, return an empty List
@@ -20,6 +21,6 @@ public interface ISymptomReader {
 	 * @return a raw listing of all Symptoms obtained from a data source, duplicates are possible/probable
 	 */
 
-	Map <String, Integer> symptomsMap = new HashMap <>( );
+	Map <String, Integer> symptomsMap = new HashMap <>();
 
 	}

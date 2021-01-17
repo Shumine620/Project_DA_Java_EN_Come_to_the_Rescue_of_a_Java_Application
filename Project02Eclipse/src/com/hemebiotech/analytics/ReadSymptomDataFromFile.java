@@ -14,7 +14,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	private static final String Symptoms = "symptoms.txt";
 
 	@Override
-	public ArrayList <String> getSymptoms(String filepath){
+	public ArrayList<String> getSymptoms(String filepath){
 		ArrayList<String> symptomsList = new ArrayList<String>();
 
 		BufferedReader bufferedreader = null;

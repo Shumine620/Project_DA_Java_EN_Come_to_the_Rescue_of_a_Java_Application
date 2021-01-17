@@ -1,23 +1,30 @@
-package com.hemebiotech.analytics;
+/**package com.hemebiotech.analytics;
 
-import java.io.*;
-import java.util.ArrayList;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Map;
 
-/**public class SymptomsWriter implements ISymptomReader {
+public class SymptomsWriter implements ISymptomsWriter {
 
-@Override
-public ArrayList <String> getSymptoms(String filepath) {
+    private String symptomsFile;
 
-        try {
-            FileWriter writer = new FileWriter("result-out.txt");//Creation du fichier
-            writer.write("Symptoms Counts");//Ecrit sur le fichier ----- Chercher le count
+    @Override
+    public void write(Map <String, Integer> resultsOut) {
 
-            writer.close();
-            System.out.println("Successfully wrote to the file.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
+    public SymptomsWriter(String symptomsFile) {
+            this.symptomsFile = symptomsFile;
     }
+             try {
+                    FileWriter writer = new FileWriter("results-out.txt");//Creation du fichier
+                    writer.write("Symptoms Counts");//Ecrit sur le fichier ----- Chercher le count
+                    writer.close( );
 
-}*/
+                    System.out.println("Successfully wrote to the file.");
+                } catch ( IOException e ) {
+                    System.out.println("An error occurred during writing.");
+                    e.printStackTrace( );
+                }
+            }
+        }
+*/
+

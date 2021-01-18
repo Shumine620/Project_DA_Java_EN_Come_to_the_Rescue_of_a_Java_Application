@@ -6,7 +6,8 @@ import java.util.Map;
 public class AnalyticsCounter {
 
 	public static void main(String[] args) {
-		//Lecture du fichier
+
+//Lecture du fichier
 
 		ReadSymptomDataFromFile reader = new ReadSymptomDataFromFile();
 		String filepath = "Project02Eclipse/symptoms.txt";
@@ -19,13 +20,14 @@ public class AnalyticsCounter {
 		SymptomsCount count = new SymptomsCount();
 		Map<String, Integer>symptomsMap = count.count(symptoms);
 
-		//Ecriture du fichier résultat
+
+//Ecriture du fichier résultat
 
 
-		/**SymptomsWriter writer = new SymptomsWriter(symptomsMap);
-		fileWriter("results-out.txt", symptomsMap);
+		SymptomsWriter writer = new SymptomsWriter();
+		writer.write(symptomsMap);
 
-*/
+
 	}
 
 }

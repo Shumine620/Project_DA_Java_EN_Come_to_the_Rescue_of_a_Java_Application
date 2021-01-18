@@ -20,7 +20,8 @@ public class SymptomsCount implements ISymptomsCount {
                 }
             for (Map.Entry <String, Integer> entryKeyValue : symptomsMap.entrySet( )) {
                 System.out.println("Symptom : " + entryKeyValue.getKey( ) + ", Occurrence : "
-                        + entryKeyValue.getValue( ) + " times");
+                        + entryKeyValue.getValue( ) + " times"+ "\n");
+
             }
 
         } catch ( Exception e ) {

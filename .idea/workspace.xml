@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="024c530f-6ffb-43c2-9849-0243c5cb9423" name="Default Changelist" comment="Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/AnalyticsCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/AnalyticsCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ReadSymptomDataFromFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ReadSymptomDataFromFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/SymptomsCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/SymptomsCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/AnalyticsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/AnalyticsCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ISymptomReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ISymptomReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ISymptomsCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ISymptomsCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ISymptomsWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ISymptomsWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/SymptomsCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/SymptomsCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/SymptomsWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/SymptomsWriter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610990779842</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Done">
+      <created>1610999965007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610999965007</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Done">
+      <created>1611000074462</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611000074462</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

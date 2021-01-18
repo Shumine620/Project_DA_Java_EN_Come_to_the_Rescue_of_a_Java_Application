@@ -11,7 +11,8 @@ import java.util.ArrayList;
  * 
  */
 public interface ISymptomReader {
-	ArrayList <String> getSymptoms(String filepath);
+
+		ArrayList <String> getSymptoms(String filepath);
 
 	}
 /**

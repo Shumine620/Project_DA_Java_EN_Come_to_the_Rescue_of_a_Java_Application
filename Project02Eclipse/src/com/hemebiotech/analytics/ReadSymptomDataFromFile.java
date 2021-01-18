@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 /**
  * Simple brute force implementation
- *
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
@@ -15,6 +14,8 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	/**
 	 *
 	 * @param filepath a full or partial path to file with symptom strings in it, one per line
+	 * @return List of symptoms from filepath
+	 * @throws IOException if file cannot be read or if missing
 	 */
 	@Override
 	public ArrayList<String> getSymptoms(String filepath){
@@ -22,18 +23,19 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 
 		BufferedReader bufferedreader = null;
 		FileReader filereader = null;
+
 		try {
-			filereader = new FileReader(filepath);//Charge le fichier à lire
-			bufferedreader = new BufferedReader(filereader);//Lis le fichier depuis l'input reçu
+			filereader = new FileReader(filepath);
+			bufferedreader = new BufferedReader(filereader);
 			String symptomLine;
 			while ((symptomLine = bufferedreader.readLine( ))!=null) {
 				System.out.println(symptomLine);
-				//Continue de parcourir et lire le fichier tant qu'il n'est pas vide puis affiche les lignes
+
 				symptomsList.add(symptomLine);
 					}
 
-			} catch ( IOException e ) {//I/O = Input/Output
-			e.printStackTrace( );//Montre où se trouve l'erreur
+			} catch ( IOException e ) {
+			e.printStackTrace( );
 		} finally {
 			try {
 				if (bufferedreader!=null)
@@ -43,7 +45,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 			} catch ( IOException e ) {
 				e.printStackTrace( );
 			}
-		}
+					}
 		return symptomsList;
 	}
 }

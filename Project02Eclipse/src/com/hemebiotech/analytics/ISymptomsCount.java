@@ -1,9 +1,8 @@
 package com.hemebiotech.analytics;
 
 import java.util.ArrayList;
-import java.util.Map;
+import java.util.TreeMap;
 
 public interface ISymptomsCount {
-    Map <String, Integer> count(ArrayList <String> symptomsList);
-
+    TreeMap <String, Integer> count(ArrayList <String> symptomsList);
 }

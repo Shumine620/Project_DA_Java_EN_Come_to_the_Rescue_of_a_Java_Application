@@ -2,29 +2,28 @@ package com.hemebiotech.analytics;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class SymptomsWriter implements ISymptomsWriter {
 
     @Override
-    public void write(Map <String, Integer> resultsOut){
-
-            HashMap <String, Integer> symptomsMap = new HashMap <>();
-
-            try {
-                FileWriter writer = new FileWriter("results-out.txt");//Creation du fichier
-                writer.write("Symptoms Counts:" + "\n" + resultsOut + "\n");//Ecrit sur le fichier -
+    public void writeFile(TreeMap <String, Integer> resultsMap, String resultFilePath) {
 
 
-                writer.close( );
+        try {
+            FileWriter writer = new FileWriter(resultFilePath);//Creation du fichier
 
-                System.out.println("Successfully wrote to the file.");
-            } catch ( IOException e ) {
-                System.out.println("An error occurred during writing.");
-                e.printStackTrace( );
+            for (Map.Entry <String, Integer> entryKeyValue : resultsMap.entrySet( )) {
+                writer.write("Symptom : " + entryKeyValue.getKey( ) + ", Occurrence : "
+                        + entryKeyValue.getValue( ) + " times" + "\n");
             }
+            writer.close( );
+
+            System.out.println("Successfully wrote to the file.");
+        } catch ( IOException e ) {
+            System.out.println("An error occurred during writing.");
+            e.printStackTrace( );
         }
-
-
+    }
 }

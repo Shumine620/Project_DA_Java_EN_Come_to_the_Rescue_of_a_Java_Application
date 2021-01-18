@@ -1,7 +1,7 @@
 package com.hemebiotech.analytics;
 
 import java.util.ArrayList;
-import java.util.Map;
+import java.util.TreeMap;
 
 public class AnalyticsCounter {
 
@@ -14,20 +14,14 @@ public class AnalyticsCounter {
 		ArrayList<String> symptoms = reader.getSymptoms(filepath);
 		System.out.println(symptoms.get(0));
 
-
 //Traitement du fichier
 
 		SymptomsCount count = new SymptomsCount();
-		Map<String, Integer>symptomsMap = count.count(symptoms);
-
+		TreeMap<String, Integer> symptomsMap = count.count(symptoms);
 
 //Ecriture du fichier résultat
-
-
+String resultFilePath = "results-out";
 		SymptomsWriter writer = new SymptomsWriter();
-		writer.write(symptomsMap);
-
-
+		writer.writeFile(symptomsMap, resultFilePath);
 	}
-
 }

@@ -6,13 +6,13 @@ import java.util.Map;
 
 public class SymptomsWriter implements ISymptomsWriter {
 
-    private String symptomsFile;
+    private String symptomsMap;
 
     @Override
     public void write(Map <String, Integer> resultsOut) {
 
-    public SymptomsWriter(String symptomsFile) {
-            this.symptomsFile = symptomsFile;
+   SymptomsWriter(String symptomsMap) {
+            this.symptomsMap = symptomsMap;
     }
              try {
                     FileWriter writer = new FileWriter("results-out.txt");//Creation du fichier

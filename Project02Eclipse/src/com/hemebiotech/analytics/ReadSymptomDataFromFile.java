@@ -1,3 +1,4 @@
+
 package com.hemebiotech.analytics;
 
 import java.io.BufferedReader;
@@ -12,12 +13,14 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private static final String Symptoms = "symptoms.txt";
 	/**
-	 *
+	 * Read the text from the file "symptoms.txt"
+	 * Create an ArrayList of the collected information
 	 * @param filepath a full or partial path to file with symptom strings in it, one per line
 	 * @return List of symptoms from filepath
-	 * @throws IOException if file cannot be read or if missing
+	 * @throws IOException e exception file cannot be read or if missing
 	 */
 	@Override
+
 	public ArrayList<String> getSymptoms(String filepath){
 		ArrayList<String> symptomsList = new ArrayList<String>();
 
@@ -25,6 +28,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 		FileReader filereader = null;
 
 		try {
+
 			filereader = new FileReader(filepath);
 			bufferedreader = new BufferedReader(filereader);
 			String symptomLine;

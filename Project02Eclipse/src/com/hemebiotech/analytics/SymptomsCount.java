@@ -8,7 +8,7 @@ public class SymptomsCount implements ISymptomsCount {
     /**
      * Count and Order the number of occurrence of each symptoms: TreeMap(Key, Value)
      * @param symptomsList List to order
-     * @return A sorted map of symptoms from the list
+     * @return symptomsMap : a sorted map of symptoms from the list
      */
     @Override
     public TreeMap <String, Integer> count(ArrayList <String> symptomsList) {

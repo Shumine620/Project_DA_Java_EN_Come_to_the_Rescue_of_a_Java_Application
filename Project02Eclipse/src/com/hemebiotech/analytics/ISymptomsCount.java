@@ -8,7 +8,7 @@ public interface ISymptomsCount {
     /**
      *
      * @param symptomsList List to order
-     * @return A sorted map of symptoms from the list
+     * @return symptomsMap : a sorted map of symptoms from the list
      */
     TreeMap <String, Integer> count(ArrayList <String> symptomsList);
 }

@@ -11,45 +11,47 @@ import java.util.ArrayList;
 
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
-	private static final String Symptoms = "symptoms.txt";
-	/**
-	 * Read the text from the file "symptoms.txt"
-	 * Create an ArrayList of the collected information
-	 * @param filepath a full or partial path to file with symptom strings in it, one per line
-	 * @return List of symptoms from filepath
-	 * @throws IOException e exception file cannot be read or if missing
-	 */
-	@Override
+    private static final String Symptoms = "symptoms.txt";
 
-	public ArrayList<String> getSymptoms(String filepath){
-		ArrayList<String> symptomsList = new ArrayList<String>();
+    /**
+     * Read the text from the file "symptoms.txt"
+     * Create an ArrayList of the collected information
+     *
+     * @param filepath a full or partial path to file with symptom strings in it, one per line
+     * @return List of symptoms from filepath
+     * @throws IOException e exception file cannot be read or if missing
+     */
+    @Override
 
-		BufferedReader bufferedreader = null;
-		FileReader filereader = null;
+    public ArrayList <String> getSymptoms(String filepath) {
+        ArrayList <String> symptomsList = new ArrayList <String>();
 
-		try {
+        BufferedReader bufferedreader = null;
+        FileReader filereader = null;
 
-			filereader = new FileReader(filepath);
-			bufferedreader = new BufferedReader(filereader);
-			String symptomLine;
-			while ((symptomLine = bufferedreader.readLine())!=null) {
-				System.out.println(symptomLine);
+        try {
 
-				symptomsList.add(symptomLine);
-					}
+            filereader = new FileReader(filepath);
+            bufferedreader = new BufferedReader(filereader);
+            String symptomLine;
+            while ((symptomLine = bufferedreader.readLine())!=null) {
+                System.out.println(symptomLine);
 
-			} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if (bufferedreader!=null)
-					bufferedreader.close();
-				if (filereader!=null)
-					filereader.close();
-			} catch ( IOException e ) {
-				e.printStackTrace();
-			}
-					}
-		return symptomsList;
-	}
+                symptomsList.add(symptomLine);
+            }
+
+        } catch ( IOException e ) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (bufferedreader!=null)
+                    bufferedreader.close();
+                if (filereader!=null)
+                    filereader.close();
+            } catch ( IOException e ) {
+                e.printStackTrace();
+            }
+        }
+        return symptomsList;
+    }
 }

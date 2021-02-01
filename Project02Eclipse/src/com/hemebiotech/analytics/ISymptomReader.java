@@ -13,7 +13,6 @@ import java.util.ArrayList;
 public interface ISymptomReader {
 
 		ArrayList <String> getSymptoms(String filepath);
-
 	}
 /**
  * If no data is available, return an empty List

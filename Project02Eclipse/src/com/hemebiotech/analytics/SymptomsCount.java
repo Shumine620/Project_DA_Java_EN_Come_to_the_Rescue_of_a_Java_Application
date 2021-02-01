@@ -11,8 +11,8 @@ public class SymptomsCount implements ISymptomsCount {
      * @return symptomsMap : a sorted map of symptoms from the list
      */
     @Override
-    public TreeMap <String, Integer> count(ArrayList <String> symptomsList) {
-        TreeMap <String, Integer> symptomsMap = new TreeMap <>( );
+    public TreeMap<String, Integer> count(ArrayList<String> symptomsList) {
+        TreeMap<String, Integer> symptomsMap = new TreeMap <>();
 
         Integer count;
 
@@ -24,18 +24,10 @@ public class SymptomsCount implements ISymptomsCount {
             symptomsMap.put(symptom, count + 1);
             /**Iterate the HashMap to display the word with number of time occurrence  */
         }
-        for (Map.Entry <String, Integer> entryKeyValue : symptomsMap.entrySet( )) {
-            System.out.println("Symptom : " + entryKeyValue.getKey( ) + ", Occurrence : "
-                    + entryKeyValue.getValue( ) + " times" + "\n");
+        for (Map.Entry<String, Integer> entryKeyValue : symptomsMap.entrySet()) {
+            System.out.println("Symptom : " + entryKeyValue.getKey() + ", Occurrence : "
+                    + entryKeyValue.getValue() + " times" + "\n");
         }
-
         return symptomsMap;
     }
-
 }
-
-
-
-
-
-

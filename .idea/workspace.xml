@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="024c530f-6ffb-43c2-9849-0243c5cb9423" name="Default Changelist" comment="Done - Working on Javadoc">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/AnalyticsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/AnalyticsCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ISymptomsCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ISymptomsCount.java" afterDir="false" />
+    <list default="true" id="024c530f-6ffb-43c2-9849-0243c5cb9423" name="Default Changelist" comment="Final version">
       <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/SymptomsCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/SymptomsCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsWriter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Work2OneInterfacePerClass" />
+        <entry key="$PROJECT_DIR$" value="Work" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,11 +51,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowPlantUML.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -190,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611003427732</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Javadoc Completed">
+      <created>1611059437301</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611059437301</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Final version">
+      <created>1612196040162</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612196040162</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -224,7 +236,9 @@
     <MESSAGE value="Writer done" />
     <MESSAGE value="Done" />
     <MESSAGE value="Done - Working on Javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done - Working on Javadoc" />
+    <MESSAGE value="Javadoc Completed" />
+    <MESSAGE value="Final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

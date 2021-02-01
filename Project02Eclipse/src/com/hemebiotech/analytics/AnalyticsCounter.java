@@ -12,20 +12,17 @@ public class AnalyticsCounter {
 	 */
 	public static void main(String[] args) {
 
-		/**Reading of the file */
-
+/**Reading of the file */
 		ReadSymptomDataFromFile reader = new ReadSymptomDataFromFile();
 		String filepath = "Project02Eclipse/symptoms.txt";
 		ArrayList<String> symptoms = reader.getSymptoms(filepath);
-		System.out.println(symptoms.get(0));
 
 /** Counting the symptoms and sorting them*/
-
 		SymptomsCount count = new SymptomsCount();
 		TreeMap<String, Integer> symptomsMap = count.count(symptoms);
 
 /** Writing the result on a dedicated file*/
-		String resultFilePath = "results-out";
+		String resultFilePath = "results-out.txt";
 		SymptomsWriter writer = new SymptomsWriter();
 		writer.writeFile(symptomsMap, resultFilePath);
 	}

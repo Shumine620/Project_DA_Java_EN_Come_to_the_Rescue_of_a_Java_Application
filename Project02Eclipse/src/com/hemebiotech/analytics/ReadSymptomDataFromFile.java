@@ -1,4 +1,3 @@
-
 package com.hemebiotech.analytics;
 
 import java.io.BufferedReader;
@@ -9,6 +8,7 @@ import java.util.ArrayList;
 /**
  * Simple brute force implementation
  */
+
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	private static final String Symptoms = "symptoms.txt";
@@ -32,25 +32,24 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 			filereader = new FileReader(filepath);
 			bufferedreader = new BufferedReader(filereader);
 			String symptomLine;
-			while ((symptomLine = bufferedreader.readLine( ))!=null) {
+			while ((symptomLine = bufferedreader.readLine())!=null) {
 				System.out.println(symptomLine);
 
 				symptomsList.add(symptomLine);
 					}
 
-			} catch ( IOException e ) {
-			e.printStackTrace( );
+			} catch (IOException e) {
+			e.printStackTrace();
 		} finally {
 			try {
 				if (bufferedreader!=null)
-					bufferedreader.close( );
+					bufferedreader.close();
 				if (filereader!=null)
-					filereader.close( );
+					filereader.close();
 			} catch ( IOException e ) {
-				e.printStackTrace( );
+				e.printStackTrace();
 			}
 					}
 		return symptomsList;
 	}
 }
-

@@ -6,7 +6,6 @@ import java.util.TreeMap;
 
 public interface ISymptomsCount {
     /**
-     *
      * @param symptomsList List to order
      * @return symptomsMap : a sorted map of symptoms from the list
      */

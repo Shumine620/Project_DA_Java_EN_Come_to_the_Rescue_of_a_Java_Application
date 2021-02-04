@@ -8,11 +8,12 @@ import java.util.TreeMap;
 
 public class SymptomsWriter implements ISymptomsWriter {
     /**
-     *Create a new file to write the results of symptomsMap
-     * @param resultsMap File to write the collection of sorted symptoms
+     * Create a new file to write the results of symptomsMap
+     *
+     * @param resultsMap     File to write the collection of sorted symptoms
      * @param resultFilePath Path location for the file resultsMap
      */
-  @Override
+    @Override
     public void writeFile(TreeMap <String, Integer> resultsMap, String resultFilePath) {
 
         try {
@@ -25,7 +26,7 @@ public class SymptomsWriter implements ISymptomsWriter {
             writer.close();
 
             System.out.println("Successfully wrote to the file.");
-        } catch (IOException e) {
+        } catch ( IOException e ) {
             System.out.println("An error occurred during writing.");
             e.printStackTrace();
         }

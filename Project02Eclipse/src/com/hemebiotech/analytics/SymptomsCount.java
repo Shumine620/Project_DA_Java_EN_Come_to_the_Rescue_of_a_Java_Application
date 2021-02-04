@@ -7,12 +7,13 @@ import java.util.TreeMap;
 public class SymptomsCount implements ISymptomsCount {
     /**
      * Count and Order the number of occurrence of each symptoms: TreeMap(Key, Value)
+     *
      * @param symptomsList List to order
      * @return symptomsMap : a sorted map of symptoms from the list
      */
     @Override
-    public TreeMap<String, Integer> count(ArrayList<String> symptomsList) {
-        TreeMap<String, Integer> symptomsMap = new TreeMap <>();
+    public TreeMap <String, Integer> count(ArrayList <String> symptomsList) {
+        TreeMap <String, Integer> symptomsMap = new TreeMap <>();
 
         Integer count;
 
@@ -22,9 +23,10 @@ public class SymptomsCount implements ISymptomsCount {
                 count = 0;
             }
             symptomsMap.put(symptom, count + 1);
-            /**Iterate the HashMap to display the word with number of time occurrence  */
+
         }
-        for (Map.Entry<String, Integer> entryKeyValue : symptomsMap.entrySet()) {
+        //Iterate the HashMap to display the word with number of time occurrence
+        for (Map.Entry <String, Integer> entryKeyValue : symptomsMap.entrySet()) {
             System.out.println("Symptom : " + entryKeyValue.getKey() + ", Occurrence : "
                     + entryKeyValue.getValue() + " times" + "\n");
         }

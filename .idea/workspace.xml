@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="024c530f-6ffb-43c2-9849-0243c5cb9423" name="Default Changelist" comment="Final version">
+    <list default="true" id="024c530f-6ffb-43c2-9849-0243c5cb9423" name="Default Changelist" comment="Reformating code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/AnalyticsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/AnalyticsCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/ReadSymptomDataFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsCount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/com/hemebiotech/analytics/ISymptomsWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/SymptomsCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project02Eclipse/src/com/hemebiotech/analytics/SymptomsCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612196040162</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Reformating code">
+      <created>1612196628417</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612196628417</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -238,7 +245,8 @@
     <MESSAGE value="Done - Working on Javadoc" />
     <MESSAGE value="Javadoc Completed" />
     <MESSAGE value="Final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final version" />
+    <MESSAGE value="Reformating code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformating code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

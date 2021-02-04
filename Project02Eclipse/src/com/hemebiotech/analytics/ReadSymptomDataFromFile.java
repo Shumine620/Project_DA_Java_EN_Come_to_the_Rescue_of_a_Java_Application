@@ -5,13 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- * Simple brute force implementation
- */
 
 public class ReadSymptomDataFromFile implements ISymptomReader {
-
-    private static final String Symptoms = "symptoms.txt";
 
     /**
      * Read the text from the file "symptoms.txt"
